@@ -148,12 +148,15 @@ export default function Home() {
           <h2 className="text-xl font-semibold mb-4">Receive Webdeeds</h2>
           <div className="flex gap-2">
             <Input
-              placeholder="Enter deed"
+              size="lg"
+              label="Enter deed"
+              placeholder="+100.deed_XXXXXXXXXXXXXXX.XXXXXXXX"
               value={outputString}
               onChange={(e) => setOutputString(e.target.value)}
               className="flex-1"
             />
             <Button
+              size="lg"
               onPress={handleReceive}
               isLoading={receiveMutation.isPending}
             >

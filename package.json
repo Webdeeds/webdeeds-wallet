@@ -4,11 +4,12 @@
   "type": "module",
   "scripts": {
     "build": "react-router build",
+    "build-storybook": "storybook build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "sso": "aws sso login --sso-session=webdeeds",
+    "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
     "@heroui/react": "^2.7.5",
@@ -22,9 +23,11 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router": "^7.4.1",
+    "sst": "3.12.3",
     "webdeeds-js": "link:../webdeeds-js"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "4.20250404.0",
     "@react-router/dev": "^7.4.1",
     "@storybook/addon-essentials": "^8.6.12",
     "@storybook/addon-interactions": "^8.6.12",
@@ -43,6 +46,7 @@
     "postcss": "^8.5.3",
     "prettier": "^3.5.3",
     "react-router-devtools": "^1.1.0",
+    "sst": "^3.12.3",
     "storybook": "^8.6.12",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.2",

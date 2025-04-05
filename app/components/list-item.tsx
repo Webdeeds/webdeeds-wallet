@@ -1,5 +1,5 @@
 import { Button, Card, Chip, Skeleton, Tooltip } from "@heroui/react";
-import { Copy } from "lucide-react";
+import { Copy, DiamondPlusIcon } from "lucide-react";
 import { useState } from "react";
 
 interface ListItemProps {
@@ -11,25 +11,6 @@ interface ListItemProps {
   actions?: React.ReactNode;
   isLoading?: boolean;
 }
-
-const DiamondIcon = () => (
-  <svg
-    width="16"
-    height="16"
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className="text-current"
-  >
-    <path
-      d="M8 2L14 8L8 14L2 8L8 2Z"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
 
 export function ListItem({
   imageUrl,
@@ -87,7 +68,7 @@ export function ListItem({
             <Chip
               color="primary"
               variant="flat"
-              startContent={<DiamondIcon />}
+              startContent={<DiamondPlusIcon size={16} />}
               className="rounded-md"
               size="sm"
             >

@@ -132,6 +132,7 @@ export function SendWebdeedModal({
               ) : (
                 <div>
                   <Input
+                    size="lg"
                     type="number"
                     label="Amount to send"
                     placeholder="Enter amount"

@@ -126,6 +126,7 @@ export default function Mint() {
                 <div>
                   <label className="block text-sm font-medium mb-1">Name</label>
                   <Input
+                    size="lg"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
@@ -139,6 +140,7 @@ export default function Mint() {
                     Description
                   </label>
                   <Input
+                    size="lg"
                     name="description"
                     value={formData.description}
                     onChange={handleChange}
@@ -151,6 +153,7 @@ export default function Mint() {
                     Image URL
                   </label>
                   <Input
+                    size="lg"
                     name="imageUrl"
                     value={formData.imageUrl}
                     onChange={handleChange}
@@ -163,6 +166,7 @@ export default function Mint() {
                     Quantity
                   </label>
                   <Input
+                    size="lg"
                     name="quantity"
                     type="number"
                     min="1"
@@ -174,9 +178,9 @@ export default function Mint() {
 
                 <div className="pt-4">
                   <Button
+                    size="lg"
                     type="submit"
                     color="primary"
-                    className="w-full"
                     isLoading={mintMutation.isPending}
                   >
                     Mint Webdeed

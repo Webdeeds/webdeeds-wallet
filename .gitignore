@@ -6,3 +6,8 @@
 /build/
 
 *storybook.log
+
+# sst
+.sst
+
+/.env
